@@ -31,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
     private ImageView mImageView;
     private ViewGroup mRrootLayout;
-    private Button btnCapture, btnSave;
     private int _xDelta;
     private int _yDelta;
 
@@ -42,7 +41,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         mRrootLayout = (ViewGroup)findViewById(R.id.root);
         mImageView = (ImageView) mRrootLayout.findViewById(R.id.image);
-        btnCapture = (Button) mRrootLayout.findViewById(R.id);
 
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(550, 550);
         mImageView.setLayoutParams(layoutParams);
@@ -82,24 +80,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     /** Start pick image activity with chooser. */
     public void onSelectImageClick(View view) {
         CropImage.activity(null).setGuidelines(CropImageView.Guidelines.ON).setCropShape(CropImageView.CropShape.OVAL).start(this);
-    }
-
-    public void savePicture(View view) throws IOException {
-        BitmapDrawable draw = (BitmapDrawable) mImageView.getDrawable();
-        Bitmap bitmap = draw.getBitmap();
-
-        FileOutputStream outStream = null;
-        File sdCard = Environment.getExternalStorageDirectory();
-        File dir = new File(sdCard.getAbsolutePath() + "/Jakarta");
-        dir.mkdirs();
-        String fileName = String.format("%d.jpg", System.currentTimeMillis());
-        File outFile = new File(dir, fileName);
-        outStream = new FileOutputStream(outFile);
-        bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
-        outStream.flush();
-        outStream.close();
-
-
     }
 
     @Override
