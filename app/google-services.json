@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "612175184243",
+    "firebase_url": "https://bingkainusantara-8624e.firebaseio.com",
+    "project_id": "bingkainusantara-8624e",
+    "storage_bucket": "bingkainusantara-8624e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612175184243:android:2d9aa6deed449f5a",
+        "android_client_info": {
+          "package_name": "com.awn.app.bingkainusantara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612175184243-ktqgsvg4gc8idoiakdfqh72h8ls3si0h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.awn.app.bingkainusantara",
+            "certificate_hash": "34f6c9656377883bc9ba4a8ab46c7b9b50895777"
+          }
+        },
+        {
+          "client_id": "612175184243-0rcuh4358ta3ng7ui2bpeenc9n9thikl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdbSm3ikZ4Fvcler3aEM67L5UPefaHs5Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612175184243-0rcuh4358ta3ng7ui2bpeenc9n9thikl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -27,10 +27,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity implements View.OnTouchListener {
+public class MainActivity extends AppCompatActivity implements View.OnTouchListener, View.OnClickListener {
 
     private ImageView mImageView;
     private ViewGroup mRrootLayout;
+    private Button btnJelajah;
     private int _xDelta;
     private int _yDelta;
 
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
         mRrootLayout = (ViewGroup)findViewById(R.id.root);
         mImageView = (ImageView) mRrootLayout.findViewById(R.id.image);
+        btnJelajah = (Button) findViewById(R.id.btn_jelajah);
+
+        btnJelajah.setOnClickListener(this);
 
         RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(550, 550);
         mImageView.setLayoutParams(layoutParams);
@@ -141,5 +145,13 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         int k = Integer.highestOneBit((int)Math.floor(ratio));
         if(k==0) return 1;
         else return k;
+    }
+
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.btn_jelajah){
+            Intent intent = new Intent(this, JelajahActivity.class);
+            startActivity(intent);
+        }
     }
 }

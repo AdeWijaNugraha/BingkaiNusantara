@@ -23,6 +23,16 @@
         android:layout_height="96dp"
         />
 
+    <Button
+        android:layout_below="@+id/btn_capture"
+        android:id="@+id/btn_jelajah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="12dp"
+        android:onClick="onSelectImageClick"
+        android:text="Jelajah" />
+
 
 </RelativeLayout>
 
