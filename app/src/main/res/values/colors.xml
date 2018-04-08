@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#765285</color>
+    <color name="colorPrimaryDark">#351CAD</color>
     <color name="colorAccent">#FF4081</color>
+
+    <color name="topicalPink">#F5AB99</color>
+    <color name="liquidSunset">#FEB47B</color>
+    <color name="heatwave">#FF7E5F</color>
+    <color name="halfparadise">#af91bc</color>
+    <color name="paradise">#765285</color>
+    <color name="nightfall">#351CAD</color>
 </resources>
